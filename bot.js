@@ -42,4 +42,4 @@ bot.on('message', message => {
 
 });
 
-bot.login(botSettings.token);
+bot.login("NDM1NTAyNjM3NzE1MjkyMTY5.DcZ8jg.Ipk8s6AACPfW6Sjd6GNgqt8dxFA");
