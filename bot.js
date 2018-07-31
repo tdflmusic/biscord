@@ -48,7 +48,7 @@ bot.on('message', message => {
       let subject = args[0];
       let roasted = new Discord.RichEmbed()
         .setTitle(subject + " is gay!!!")
-        .setColor(0x81542e)
+        .setColor(0x6542f4)
         .setDescription("my reasoning for this is because he is a rart!!!")
         .setThumbnail("https://images-ext-2.discordapp.net/external/QDm386zeg-nCcwVqUkuHZMOKkeBzvI8SgAzBs5zzIEY/https/pre00.deviantart.net/6222/th/pre/f/2017/187/f/e/bonzi_buddy_2_0__wip__2__by_the64thgamer-dbf9v1o.png?width=705&height=504");
       message.delete(10);
