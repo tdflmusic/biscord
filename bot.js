@@ -54,6 +54,37 @@ bot.on('message', message => {
       message.delete(10);
       return message.channel.send(roasted);
       break; 
+    case "tannerfromhs" :
+      let subject2 = args[0];
+      let copypasta = new Discord.RichEmbed()
+        .setTitle("h")
+        .setColor(0x605d5d)
+        .setDescription("So you're going by " + subject2 + " now nerd? Haha whats up douche bag, it's Tanner from Highschool. Remember me? Me and the guys used to give you a hard time in school. Sorry you were just an easy target lol. I can see not much has changed. Remember Sarah the girl you had a crush on? Yeah we're married now. I make over 200k a year and drive a mustang GT. I guess some things never change huh loser? Nice catching up lol. Pathetic..")
+        .setThumbnail("https://i.kym-cdn.com/photos/images/original/001/248/318/ae2.jpg");
+      message.delete(10);
+      return message.channel.send(copypasta);
+    case "customembed" :
+      let title = args[0];
+      let color = args[1];
+      let description = args[2];
+      let thumbnail = args[3];
+      let embedboi = new Discord.RichEmbed()
+        .setTitle(title)
+        .setColor("0x" + color)
+        .setDescription(description)
+        .setThumbnail(thumbnail);
+      message.delete(10);
+      return message.channel.send(embedboi);
+      break;
+    case "simpleembed" :
+      let text = args[0];
+      let simpleembedman = new Discord.RichEmbed()
+        .setTitle("")
+        .setColor(0x60ff5d)
+        .setDescription(text);
+      message.delete(10);
+      return message.channel.send(simpleembedman);
+      break;
 
   }
 
